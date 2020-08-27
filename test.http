@@ -1,0 +1,21 @@
+@baseUrl = http://localhost:8080
+
+###
+
+POST {{baseUrl}}/genres
+Content-Type: application/json
+
+{
+  "name": "tool"
+}
+
+###
+
+GET {{baseUrl}}/genres/list?offset=0&max=20&sort=name&order=asc
+
+###
+
+GET {{baseUrl}}/genres/1
+
+###
+
